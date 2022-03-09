@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Fragment} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import Form from "./components/home/Form";
+import SideNavbar from "./components/common/SideNavbar";
+import "./stylesheets/common/SideNavbar.css";
+import TopNavbar from "./components/common/TopNavbar";
+import Users from "./components/Users";
+//import AddUserButton from "./components/AddUserButton";
+//import AddForm from "./components/home/AddForm";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+let App = () => {
+  return(
+      <Fragment>
+
+     
+      {/*  <Form/> */}
+
+   {/*     <Router>
+           <Switch>
+              <Route path="/name" component={Form}/>
+            </Switch>
+      </Router>
+      */}
+          {/* <SideNavbar/>*/}
+            <TopNavbar/>
+          <Users/>
+          {/*   <AddForm/>  */}
+         {/* <AddUserButton/> */}
+      </Fragment>
+
+   
+  )
 }
-
 export default App;
